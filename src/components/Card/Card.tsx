@@ -1,6 +1,6 @@
 import { PropsWithChildren } from 'react';
 
-export function Card({children, title, text}: PropsWithChildren) {
+export function Card({children, title, text}: PropsWithChildren<{title: string, text: string}>) {
 
     return (
         <div className='card' style={{width: '18rem'}}>
